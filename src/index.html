@@ -82,15 +82,31 @@
                     </a>
                 </div>
             </div>
-            <h2>Generate XRP wallet</h2>
+            <!--<h2>Generate XRP wallet</h2>-->
+            <p>XinFin (XDC) support available.</p>
+            <h2>Generate 
+                <select id="select-box">
+                  <option value="1">XRP</option>
+                  <option value="2">XDC</option>
+                </select> wallet
+            </h2>
 
-            <div id="newAccount">
-                <input type="text" readonly="readonly" id="address" placeholder="Address" />
-                <input type="text" readonly="readonly" id="secret" placeholder="Secret" />
-
-                <div class="feedback" id="status"> </div>
-               
-                <button onclick="newripple()" id="button">Generate</button>
+            <div id="account-1" class="tab-content">
+                <div id="newAccount">
+                    <input type="text" readonly="readonly" id="address" placeholder="Address" />
+                    <input type="text" readonly="readonly" id="secret" placeholder="Secret" />    
+                    <div class="feedback" id="status"> </div>                   
+                    <button onclick="newripple()" id="button">Generate</button>
+                </div>
+            </div>
+            
+            <div id="account-2" class="tab-content">
+                <div id="newAccount">
+                    <input type="text" readonly="readonly" id="address-1" placeholder="Address" />
+                    <input type="text" readonly="readonly" id="secret-1" placeholder="Secret" />    
+                    <div class="feedback" id="status-1"> </div>                    
+                    <button onclick="newXDC()" id="button">Generate</button>
+                </div>
             </div>
 
             <hr>
@@ -102,7 +118,10 @@
 
         </div>
 
-        <script src="js/lodash.js"></script>
+        <!-- for show hide btn -->
+		<script src="js/jquery.min.js"></script>
+        
+		<script src="js/lodash.js"></script>
         <script src="js/ripple-0.22.0.js"></script>
         <script src="js/index.js"></script>
     </body>

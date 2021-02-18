@@ -78,7 +78,16 @@ a:hover {
   color: #193039;
   font-size: 16px;
   line-height: 16px;
-  margin-top: 62px;
+  /*margin-top: 62px;*/
+  margin-top: 41px;
+}
+
+.main-box p {
+  color: #193039;
+  font-size: 11px;
+  line-height: 11px;
+  text-align: right;
+  margin: 10px 10px 0px 0px;
 }
 
 .main-box input {
@@ -100,7 +109,7 @@ a:hover {
 
 .main-box .feedback {
   height: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   word-wrap: break-word;
 }
 
@@ -170,4 +179,31 @@ a:hover {
     width: 250px !important;
   }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#account-2 {display:none;}
+#select-box {
+    padding: 0.1rem;
+    color: #193039;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+    line-height: 15px;
+    background-color: #ffffff;
+    border: 0.0625rem solid #f2f2f2;
+    border-radius: 0.25rem;
+}
+#select-box:focus,
+#select-box:active {
+    outline: none;
 }
