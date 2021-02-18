@@ -11,7 +11,7 @@ function newripple() {
 
 
 
-
+//for xdc address and secret
 function newXDC() {
   var api = new ripple.RippleAPI();
   var account = api.generateAddress();
@@ -25,17 +25,14 @@ function newXDC() {
 
 
 
+//show the tab content of whatever option value was selected
 $( window ).on( "load", function() {
-//hide all tabs first
 $('.tab-content').hide();
-//show the first tab content
 $('#account-1').show();
 
 $('#select-box').change(function () {
    dropdown = $('#select-box').val();
-  //first hide all tabs again when a new option is selected
   $('.tab-content').hide();
-  //then show the tab content of whatever option value was selected
   $('#' + "account-" + dropdown).show();                                    
 });
 });
